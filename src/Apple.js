@@ -1,59 +1,49 @@
 import { Avatar, Button, Popover, TextField } from "@mui/material";
-import { deepOrange } from "@mui/material/colors";
-// import { Input } from "@mui/material";
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import { useNavigate } from "react-router-dom";
 
 export const Apple = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [name, setName] = useState("jemish");
+  const [email, setEmail] = useState("abc@example.com");
   const [open, setOpen] = useState(false);
-  const [anchor, setAnchor] = useState(null);
-  // const navigate = useNavigate();
+  const [anchorEL, setEnchorEL] = useState(null);
+  const navigate = useNavigate();
 
   const onHomePageButtonClick = () => {
-    console.log("button clicked!!!");
     console.log(name);
     console.log(email);
 
-    // navigate("/");
+    navigate("/");
   };
   const handleClick = (event) => {
-    setAnchor(event.currentTarget);
+    setEnchorEL(event.currentTarget);
     setOpen(true);
   };
   const handleClose = () => {
-    setAnchor(null);
+    setEnchorEL(null);
     setOpen(false);
   };
 
   return (
-    <div style={{ padding: 10 }}>
-      {/* <Grid container direction="column" alignItems="center">
-        <Grid item>
-          <h2 style={{ marginTop: "20px" }}>Apple Page 🍎</h2>
-        </Grid>
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={onHomePageButtonClick}
-            style={{ marginTop: "10px" }}
-          >
-            Button ➡️ 🏠
-          </Button>
-        </Grid>
-      </Grid> */}
-      {/* <p>Apple Page🍎🍏</p> */}
+    <div style={{ padding: 5 }}>
       <div
         style={{
           display: "flex",
           justifyContent: "flex-end",
-          alignItems: "center",
-          columnGap: 5,
+          cursor: "pointer",
         }}
       >
-        <div onClick={handleClick}>
-          <Avatar sx={{ bgcolor: deepOrange[500] }}>JK</Avatar>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+            columnGap: 5,
+          }}
+          onClick={handleClick}
+        >
+          <Avatar sx={{ bgcolor: "blue" }}>JK</Avatar>
           <span>Jemish Khunt</span>
         </div>
       </div>
@@ -69,8 +59,8 @@ export const Apple = () => {
           variant="outlined"
           label="Name"
           type="text"
+          value={name}
           placeholder="Name"
-          id="name"
           onChange={(e) => {
             setName(e.target.value);
           }}
@@ -79,16 +69,16 @@ export const Apple = () => {
           variant="outlined"
           type="email"
           label="Email"
+          value={email}
           placeholder="Email"
-          id="email"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
         />
         <Button
           variant="contained"
+          className=""
           onClick={onHomePageButtonClick}
-          style={{ marginTop: "10px" }}
         >
           Submit
         </Button>
@@ -97,8 +87,13 @@ export const Apple = () => {
         open={open}
         anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
         transformOrigin={{ vertical: "top", horizontal: "left" }}
+        anchorEl={anchorEL}
+        onClose={handleClose}
       >
-        Thecontent of the Popover.
+        <div style={{ padding: 5 }}>
+          <h5>Jemish Khunt</h5>
+          <LogoutOutlinedIcon onClick={onHomePageButtonClick} />
+        </div>
       </Popover>
     </div>
   );

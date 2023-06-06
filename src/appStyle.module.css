@@ -1,6 +1,7 @@
 .navbarStyle {
-    /* your styles here */
-    /* Example: */
-    margin-top: 10px;
-  }
-  
+  /* your styles here */
+  /* Example: */
+  display: flex;
+  padding: 5px;
+  column-gap: 10px;
+}

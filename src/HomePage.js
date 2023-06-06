@@ -1,5 +1,5 @@
 import { Button, Grid } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
   const navigate = useNavigate();
@@ -14,7 +14,11 @@ export const HomePage = () => {
         <h2 style={{ marginTop: "20px" }}>Home Page 🏠</h2>
       </Grid>
       <Grid item>
-        <Button variant="contained" onClick={onHomePageButtonClick} style={{ marginTop: "10px" }}>
+        <Button
+          variant="contained"
+          onClick={onHomePageButtonClick}
+          style={{ marginTop: "10px" }}
+        >
           Button ➡️ 🍎
         </Button>
       </Grid>

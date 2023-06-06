@@ -1,67 +1,41 @@
 import React from "react";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "@emotion/react";
-import { Button, Grid } from "@mui/material";
-import { HomePage } from "./HomePage";
-import { Apple } from "./Apple";
-// import { globleStyle } from "./Constants";
-import Applet from "./Applet";
-import { theme } from "./style";
-import appStyle from "./appStyle.module.css";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { theme } from "./utils/theme";
+import "./assets/css/style.css";
+import Footer from "./components/footer/index";
+import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import MainNavigation from "./components/MainNavigation";
+import { AuthWrapper } from "./context/auth";
+import loader from "../src/assets/images/loader.gif";
+import { CartWrapper } from "./context/cart";
+import Header from "./components/header";
 
-const NavigationBar = () => {
+const App = () => {
   return (
-    <Grid
-      container
-      justifyContent="space-between"
-      alignItems="center"
-      className={appStyle.navbarContainer}
-    >
-      <Grid item>
-        <img
-          src="/logo192.png"
-          alt="App logo"
-          style={{ width: "50px", height: "50px" }}
-        />
-      </Grid>
-      <Grid item className={appStyle.navButtons}>
-        <Link to="/" className={appStyle.navLink}>
-          <Button variant="contained" className={appStyle.navButton}>
-            Home
-          </Button>
-        </Link>
-        <Link to="/apple" className={appStyle.navLink}>
-          <Button variant="contained" className={appStyle.navButton}>
-            Apple
-          </Button>
-        </Link>
-        <Link to="/applet" className={appStyle.navLink}>
-          <Button variant="contained" className={appStyle.navButton}>
-            Applet
-          </Button>
-        </Link>
-      </Grid>
-    </Grid>
+    <ThemeProvider theme={theme}>
+      <React.Suspense fallback={<></>}>
+        <BrowserRouter>
+          <AuthWrapper>
+            <CartWrapper>
+              <div className="loader-wrapper">
+                <img src={loader} alt="loader" />
+              </div>
+              <div className="wrapper">
+                <Header />
+                <main>
+                  <MainNavigation />
+                </main>
+                <Footer />
+              </div>
+              <ToastContainer />
+            </CartWrapper>
+          </AuthWrapper>
+        </BrowserRouter>
+      </React.Suspense>
+    </ThemeProvider>
   );
 };
-
-const App = () => (
-  <ThemeProvider theme={theme}>
-    <BrowserRouter>
-      {/* <div className="navbar-style" style={...globleStyle.navbar}> it is for knowledge of styling from js file as constant  */}
-      <div className={appStyle.pageContainer}>
-        <NavigationBar />
-        <div className={appStyle.contentContainer}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/apple" element={<Apple />} />
-            <Route path="*" element={<Applet />} />
-          </Routes>
-        </div>
-      </div>
-      {/* </div> */}
-    </BrowserRouter>
-  </ThemeProvider>
-);
 
 export default App;

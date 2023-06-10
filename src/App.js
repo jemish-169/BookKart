@@ -8,6 +8,8 @@ import { Apple } from "./Apple";
 import Applet from "./Applet";
 import { theme } from "./style";
 import appStyle from "./appStyle.module.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const NavigationBar = () => {
   return (
@@ -47,6 +49,8 @@ const NavigationBar = () => {
 
 const App = () => (
   <ThemeProvider theme={theme}>
+    <ToastContainer />
+
     <BrowserRouter>
       {/* <div className="navbar-style" style={...globleStyle.navbar}> it is for knowledge of styling from js file as constant  */}
       <div className={appStyle.pageContainer}>

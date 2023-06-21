@@ -81,5 +81,4 @@ function removeRequest(req) {
     requests = requests.filter((request) => request !== req);
   }
 }
-
 export default request;

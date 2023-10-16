@@ -16,13 +16,11 @@ import { useNavigate } from "react-router-dom";
 import bookService from "../../service/book.service";
 import { useCartContext } from "../../context/cart";
 
-
 const Header = () => {
   const classes = headerStyle();
   const authContext = useAuthContext();
   const cartContext = useCartContext();
   // const [open, setOpen] = useState(false);
-  const open = false;
   const [query, setquery] = useState("");
   const [bookList, setbookList] = useState([]);
   const [openSearchResult, setOpenSearchResult] = useState(false);
@@ -129,7 +127,7 @@ const Header = () => {
                   {authContext.user.id && (
                     <List className="right">
                       <Button onClick={() => logOut()} variant="outlined">
-                      LOGOUT
+                        LOGOUT
                       </Button>
                     </List>
                   )}

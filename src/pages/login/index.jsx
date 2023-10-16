@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { loginStyle } from "./style";
 import {
   Breadcrumbs,
@@ -58,7 +58,7 @@ export const Login = () => {
             <Link color="inherit" href="/" title="Home">
               Home
             </Link>
-            <Typography style={{ color: '#3385ff' }} >Login</Typography>
+            <Typography style={{ color: "#3385ff" }}>Login</Typography>
           </Breadcrumbs>
           <Typography variant="h1">Login or Create an Account</Typography>
           <div className="login-row">
@@ -68,7 +68,9 @@ export const Login = () => {
                 <List className="bullet-list">
                   <ListItem>To create a customer profile</ListItem>
                   <ListItem>To provide customer service</ListItem>
-                  <ListItem>To market products or services to customers</ListItem>
+                  <ListItem>
+                    To market products or services to customers
+                  </ListItem>
                 </List>
               </div>
               <div className="btn-wrapper">

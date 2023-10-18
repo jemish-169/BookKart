@@ -33,6 +33,7 @@ export const EditBook = () => {
     categoryService.getAll().then((res) => {
       setCategories(res);
     });
+    // eslint-disable-next-line
   }, []);
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Book Name is required"),

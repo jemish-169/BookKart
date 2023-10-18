@@ -48,6 +48,7 @@ export const AuthWrapper = ({ children }) => {
     if (!str.id) {
       navigate(RoutePaths.Login);
     }
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -74,6 +75,7 @@ export const AuthWrapper = ({ children }) => {
       return;
     }
     // setAppInitialize
+    // eslint-disable-next-line
   }, [pathname, user]);
 
   const value = {

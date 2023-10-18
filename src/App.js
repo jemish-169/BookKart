@@ -1,41 +1,33 @@
-import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { theme } from "./utils/theme";
-import "./assets/css/style.css";
-import Footer from "./components/footer/index";
-import { BrowserRouter } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import MainNavigation from "./components/MainNavigation";
-import { AuthWrapper } from "./context/auth";
-import loader from "../src/assets/images/loaderimage.gif";
-import { CartWrapper } from "./context/cart";
-import Header from "./components/header";
-
+// import logo from './logo.svg';
+import './App.css';
+import { BrowserRouter} from "react-router-dom"
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { MainNavigation } from './components/MainNavigation';
+import { Footer } from './components/footers/Footer';
+import { Headers } from './components/headers/Headers';
+import { AuthWrapper } from './context/auth.context';
+import { ThemeProvider } from '@emotion/react';
+import { createTheme } from '@mui/material';
+import { CartWrapper } from './context/cart.context';
+const theme = createTheme();
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <React.Suspense fallback={<></>}>
+    <div>
+      <ThemeProvider theme={theme}>
         <BrowserRouter>
           <AuthWrapper>
             <CartWrapper>
-              <div className="loader-wrapper">
-                <img src={loader} alt="loader" />
-              </div>
-              <div className="wrapper">
-                <Header />
-                <main>
-                  <MainNavigation />
-                </main>
-                <Footer />
-              </div>
+              <Headers/>
               <ToastContainer />
+              <MainNavigation />
+              <Footer/>
             </CartWrapper>
           </AuthWrapper>
         </BrowserRouter>
-      </React.Suspense>
-    </ThemeProvider>
+      </ThemeProvider>
+    </div>
   );
-};
+}
 
 export default App;

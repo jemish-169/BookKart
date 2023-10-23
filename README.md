@@ -1,7 +1,6 @@
 # BookKart
 
-Welcome to the Ecommerce Bookstore, a modern web application built with ReactJS, Material-UI, HTML, CSS, and JavaScript. This project allows you to create and manage an online bookstore where users can browse, search, and purchase books. 📖
-<img src="bookstore.png" width="900">
+Welcome to the Ecommerce BookKart, a modern web application built with ReactJS, Material-UI, HTML, CSS, and JavaScript. This project allows you to create and manage an online bookstore where users can browse, search, and purchase books. 📖
 
 ## Demo 🚀
 
@@ -17,34 +16,16 @@ Experience the Ecommerce Bookstore in action: [Live Demo](https://book-kart-app.
 👤 User authentication and profile management
 🌟 Responsive and user-friendly design
 
-## Getting Started 🚀
+## 📸 Screenshots
+| First Page | Registration | LogIn | Update Profile|
+|--|--|--|--|
+| ![1](https://github.com/jemish-169/BookKart/assets/95186825/89d9f1b5-8bad-448f-b282-e793e4b1cbb3) | ![2](https://github.com/jemish-169/BookKart/assets/95186825/5a1f113a-ecab-4f89-9b68-bac6879b13dd) | ![3](https://github.com/jemish-169/BookKart/assets/95186825/1765e328-aed2-40a2-a90a-442c19dd82a1) | ![4](https://github.com/jemish-169/BookKart/assets/95186825/97b56a69-3cb7-4dec-8010-34e210cd65d4) |
 
-To get the Ecommerce Bookstore up and running on your local machine, follow these simple steps:
 
-1. **Clone the repository**:
+| Book Listing | Add Book | Add to Cart | Global search |
+|--|--|--|--|
+| ![5](https://github.com/jemish-169/BookKart/assets/95186825/bdb332f7-a632-44b3-91d6-affccd9c4ea5) | ![6](https://github.com/jemish-169/BookKart/assets/95186825/c5833ec7-b9e0-4214-a73e-11193a3ef04d) | ![7](https://github.com/jemish-169/BookKart/assets/95186825/9e068d5e-c36a-4619-b559-d144e92221cb) | ![8](https://github.com/jemish-169/BookKart/assets/95186825/37ef30e1-c2c6-4950-a83f-5fadbf825bc3) |
 
-   ```
-   git clone https://github.com/jemish-169/BookKart.git
-   ```
-
-2. **Navigate to the project directory**:
-
-   ```
-   cd BookKart
-   ```
-
-3. **Install dependencies**:
-
-   ```
-   npm install
-   ```
-
-4. **Run the development server**:
-   ```
-   npm start
-   ```
-
-The app should now be running on [http://localhost:3000](http://localhost:3000). Open this link in your web browser to start using the Ecommerce Bookstore locally.
 
 ## Usage 📖
 
@@ -78,65 +59,3 @@ The app should now be running on [http://localhost:3000](http://localhost:3000).
 - HTML5 📄
 - CSS3 🎨
 - JavaScript 📜
-
-## Contributing 🤝
-
-We welcome contributions to the Ecommerce Bookstore project. If you'd like to help make it even better, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Submit a pull request with a detailed description of your changes.
-
-## License 📝
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Happy reading and happy coding! 📚💻🚀
-
-## Sections 📚
-
-✔️ Login\
-✔️ Register\
-✔️ User Profile\
-✔️ Book Page\
-✔️ Categories\
-✔️ Book Listing Page\
-✔️ Cart Page\
-✔️ Logout
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**

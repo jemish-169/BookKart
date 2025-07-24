@@ -2,10 +2,6 @@
 
 Welcome to the Ecommerce BookKart, a modern web application built with ReactJS, Material-UI, HTML, CSS, and JavaScript. This project allows you to create and manage an online bookstore where users can browse, search, and purchase books. 📖
 
-## Live Demo 🚀
-
-Experience the BookKart in action: [Live Demo](https://book-kart-app.netlify.app/) 🌐
-
 ## Features 🌟
 
 📚 Browse a vast collection of books

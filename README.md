@@ -2,21 +2,15 @@
 
 ## Features 🌟
 
-📚 Browse a vast collection of books
+- Browse a vast collection of books
+- Search for books by title, author, or genre
+- Add books to your shopping cart
+- Checkout and make secure payments
+- Track your order and receive shipping updates
+- User authentication and profile management
+- Responsive and user-friendly design
 
-🔍 Search for books by title, author, or genre
-
-🛒 Add books to your shopping cart
-
-💳 Checkout and make secure payments
-
-📦 Track your order and receive shipping updates
-
-👤 User authentication and profile management
-
-🌟 Responsive and user-friendly design
-
-## 📸 Screenshots
+## Screenshots
 | First Page | Registration | LogIn | Update Profile|
 |--|--|--|--|
 | ![1](https://github.com/jemish-169/BookKart/assets/95186825/89d9f1b5-8bad-448f-b282-e793e4b1cbb3) | ![2](https://github.com/jemish-169/BookKart/assets/95186825/5a1f113a-ecab-4f89-9b68-bac6879b13dd) | ![3](https://github.com/jemish-169/BookKart/assets/95186825/1765e328-aed2-40a2-a90a-442c19dd82a1) | ![4](https://github.com/jemish-169/BookKart/assets/95186825/97b56a69-3cb7-4dec-8010-34e210cd65d4) |

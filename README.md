@@ -3,11 +3,17 @@
 ## Features 🌟
 
 📚 Browse a vast collection of books
+
 🔍 Search for books by title, author, or genre
+
 🛒 Add books to your shopping cart
+
 💳 Checkout and make secure payments
+
 📦 Track your order and receive shipping updates
+
 👤 User authentication and profile management
+
 🌟 Responsive and user-friendly design
 
 ## 📸 Screenshots
